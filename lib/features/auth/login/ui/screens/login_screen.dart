@@ -72,7 +72,7 @@ class LoginScreen extends StatelessWidget {
               fit: BoxFit.fitWidth,
             ),
           ),
-          body: Container(
+          body: SizedBox(
             height: 1.sh,
             child: LoadingIndicatorOverlay(
               inAsyncCall: state is LoginLoading,

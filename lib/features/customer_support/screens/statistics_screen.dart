@@ -4,7 +4,6 @@ import 'package:support/core/di/dependency_injection.dart';
 import 'package:support/features/customer_support/models/performance_stats.dart';
 import 'package:support/features/customer_support/services/support_api_service.dart';
 import 'package:support/core/theming/app_theme.dart';
-import 'package:dio/dio.dart';
 
 class StatisticsScreen extends StatefulWidget {
   const StatisticsScreen({super.key});

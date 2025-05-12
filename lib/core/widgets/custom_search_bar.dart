@@ -13,7 +13,7 @@ class CustomSearchBar extends StatelessWidget {
 
   final Color? backgroundColor;
 
-  CustomSearchBar(
+  const CustomSearchBar(
       {this.keyName,
       required this.text,
       //this.isSearching,

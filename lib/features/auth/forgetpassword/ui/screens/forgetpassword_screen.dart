@@ -8,7 +8,7 @@ import 'package:support/features/auth/forgetpassword/logic/cubit/forget_password
 import 'package:support/features/auth/forgetpassword/logic/cubit/forget_password_state.dart';
 
 class ForgotPasswordSteps extends StatefulWidget {
-  const ForgotPasswordSteps({Key? key}) : super(key: key);
+  const ForgotPasswordSteps({super.key});
 
   @override
   _ForgotPasswordStepsState createState() => _ForgotPasswordStepsState();

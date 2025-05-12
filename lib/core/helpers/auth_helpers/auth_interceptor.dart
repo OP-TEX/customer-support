@@ -6,7 +6,7 @@ class AuthInterceptor extends Interceptor {
   final Dio _dio;
   bool _isRefreshing = false;
   String? _newAccessToken;
-  List<Function()> _retryQueue = [];
+  final List<Function()> _retryQueue = [];
 
   AuthInterceptor(this._authService, this._dio);
 

@@ -3,7 +3,6 @@ import '../models/login_response.dart';
 
 class LoginApiService {
   final Dio _dio;
-
   LoginApiService(this._dio);
 
   Future<LoginResponse> login(String username, String password) async {
@@ -13,8 +12,10 @@ class LoginApiService {
       final response = await _dio.post(
         '/auth/login',
         data: {
+          
           'email': username,
           'password': password,
+          'role' : 'customer'
         },
       );
       print(response.data);

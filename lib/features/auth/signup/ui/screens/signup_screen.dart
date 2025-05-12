@@ -91,7 +91,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 fit: BoxFit.fitWidth,
               ),
             ),
-            body: Container(
+            body: SizedBox(
               height: 1.sh,
               child: Stack(
                 fit: StackFit.expand,

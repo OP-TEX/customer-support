@@ -17,7 +17,7 @@ class LoadingIndicatorOverlay extends StatelessWidget {
 
   final double blur;
 
-  LoadingIndicatorOverlay({
+  const LoadingIndicatorOverlay({
     super.key,
     required this.inAsyncCall,
     this.opacity = 0.1,

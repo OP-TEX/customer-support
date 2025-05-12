@@ -10,7 +10,7 @@ class AppTheme {
     colorScheme: ColorScheme.light(
       primary: primaryColor,
       secondary: secondaryColor,
-      background: backgroundColor,
+      surface: backgroundColor,
     ),
     scaffoldBackgroundColor: backgroundColor,
     cardColor: Colors.white,
@@ -31,7 +31,7 @@ class AppTheme {
     colorScheme: ColorScheme.dark(
       primary: primaryColor,
       secondary: secondaryColor,
-      background: const Color(0xFF181A20),
+      surface: const Color(0xFF181A20),
     ),
     scaffoldBackgroundColor: const Color(0xFF181A20),
     cardColor: const Color(0xFF23262F),

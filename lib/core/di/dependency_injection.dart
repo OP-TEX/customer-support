@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get_it/get_it.dart';
@@ -29,7 +31,7 @@ Future<void> setupGetIt() async {
 
   final Dio dio = Dio(
     BaseOptions(
-      baseUrl: /*'http://10.0.2.2:3000/api'*/"https://optexeg.me/api/",
+      baseUrl: /*'http://10.0.2.2:3000/api'*/ "https://optexeg.me/api/",
       connectTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 10),
       headers: {

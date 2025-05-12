@@ -12,7 +12,7 @@ import 'package:support/features/auth/confirmation/logic/cubit/confirmation_stat
 class ConfirmationScreen extends StatefulWidget {
   final String email;
 
-  const ConfirmationScreen({Key? key, required this.email}) : super(key: key);
+  const ConfirmationScreen({super.key, required this.email});
 
   @override
   State<ConfirmationScreen> createState() => _ConfirmationScreenState();
@@ -84,7 +84,7 @@ class _ConfirmationScreenState extends State<ConfirmationScreen> {
                   fit: BoxFit.fitWidth,
                 ),
               ),
-              body: Container(
+              body: SizedBox(
                 height: 1.sh,
                 child: Stack(
                   fit: StackFit.expand,

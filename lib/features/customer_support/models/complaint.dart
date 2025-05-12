@@ -8,6 +8,7 @@ class Complaint {
   final String assignedTo;
   final DateTime createdAt;
   final DateTime updatedAt;
+  final bool requiresLiveChat;
 
   Complaint({
     required this.id,
@@ -19,6 +20,7 @@ class Complaint {
     required this.assignedTo,
     required this.createdAt,
     required this.updatedAt,
+    this.requiresLiveChat = false,
   });
 
   factory Complaint.fromJson(Map<String, dynamic> json) {
@@ -32,10 +34,9 @@ class Complaint {
       assignedTo: json['assignedTo'],
       createdAt: DateTime.parse(json['createdAt']),
       updatedAt: DateTime.parse(json['updatedAt']),
+      requiresLiveChat: json['requiresLiveChat'] ?? false,
     );
   }
-
-
 
   Complaint copyWith({
     String? id,
@@ -47,6 +48,7 @@ class Complaint {
     String? assignedTo,
     DateTime? createdAt,
     DateTime? updatedAt,
+    bool? requiresLiveChat,
   }) {
     return Complaint(
       id: id ?? this.id,
@@ -58,6 +60,7 @@ class Complaint {
       assignedTo: assignedTo ?? this.assignedTo,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
+      requiresLiveChat: requiresLiveChat ?? this.requiresLiveChat,
     );
   }
 }
